@@ -7,14 +7,10 @@ import org.junit.Test;
 
 public class FractionTest {
     private Fraction f;
-    private Fraction f2;
-    private Fraction f3;
 
     @Before
     public void before() {
         f = new Fraction(2, 3);
-        f2 = new Fraction(4, 6);
-        f3 = new Fraction(5, 2);
     }
 
     @Test
