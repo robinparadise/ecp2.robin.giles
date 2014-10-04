@@ -28,6 +28,6 @@ public class DecimalCollectionTest {
 
 	@Test
 	public final void testHigher() {
-		assertEquals(2.3, decColl.higher(), 10e-5);
+		assertEquals(1.2, decColl.higher(), 10e-5);
 	}
 }
