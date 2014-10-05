@@ -59,5 +59,17 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
-    
+
+    public Boolean isEquivalente(Fraction f) {
+        return this.getNumerator() * f.getDenominator() == this.getDenominator() * f.getNumerator();
+    }
+
+    public Boolean isPropia() {
+        return this.getNumerator() < this.getDenominator();
+    }
+
+    public Boolean isImpropia() {
+        return !(this.getNumerator() < this.getDenominator());
+    }
+
 }
