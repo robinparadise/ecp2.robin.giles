@@ -30,4 +30,9 @@ public class DecimalCollectionTest {
 	public final void testHigher() {
 		assertEquals(1.2, decColl.higher(), 10e-5);
 	}
+	
+	@Test
+	public double testLower(){
+		assertEquals(1.1, decColl.lower());
+	}
 }
