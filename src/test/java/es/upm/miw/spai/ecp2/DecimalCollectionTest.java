@@ -32,7 +32,7 @@ public class DecimalCollectionTest {
 	}
 	
 	@Test
-	public double testLower(){
-		assertEquals(1.1, decColl.lower());
+	public void testLower(){
+		assertEquals(1.1, decColl.lower(), 10e-5);
 	}
 }

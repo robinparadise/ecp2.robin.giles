@@ -46,4 +46,8 @@ public class DecimalCollection {
         }
         return result;
     }
+    
+    public double lower(){
+    	return 0.0;    	
+    }
 }
