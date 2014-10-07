@@ -61,7 +61,7 @@ public class Fraction {
     }
 
     public Boolean isEquivalente(Fraction f) {
-        return this.getNumerator() * f.getDenominator() == this.getDenominator() * f.getNumerator();
+    	return this.decimal() == f.decimal();
     }
 
     public Boolean isPropia() {
