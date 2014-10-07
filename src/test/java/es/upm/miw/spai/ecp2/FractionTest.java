@@ -23,4 +23,20 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(0.6666, f.decimal(), 10e-5);
     }
+    
+    @Test
+    public void testIsPropia(){
+    	assertEquals(true, f.isPropia());
+    }
+    
+    @Test
+    public void testIsImpropia(){
+    	assertEquals(false, f.isImpropia());
+    }
+    
+    @Test
+    public void testIsEquivalente(){
+    	Fraction faux = new Fraction(4,6);
+    	assertEquals(true, f.isEquivalente(faux));
+    }
 }
