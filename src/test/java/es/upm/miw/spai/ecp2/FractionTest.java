@@ -39,4 +39,21 @@ public class FractionTest {
     	Fraction faux = new Fraction(4,6);
     	assertEquals(true, f.isEquivalente(faux));
     }
+    
+    
+    @Test
+    public void testIsPropiaFalse(){
+    	assertEquals(false, !f.isPropia());
+    }
+    
+    @Test
+    public void testIsImpropiaFalse(){
+    	assertEquals(true, !f.isImpropia());
+    }
+    
+    @Test
+    public void testIsEquivalenteFalse(){
+    	Fraction faux = new Fraction(4,7);
+    	assertEquals(false, f.isEquivalente(faux));
+    }
 }
