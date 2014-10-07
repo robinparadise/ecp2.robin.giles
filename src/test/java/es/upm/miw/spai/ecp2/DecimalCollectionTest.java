@@ -35,4 +35,9 @@ public class DecimalCollectionTest {
 	public void testLower(){
 		assertEquals(1.1, decColl.lower(), 10e-5);
 	}
+	
+	@Test
+	public void testMultiplication(){
+		assertEquals(1.32, decColl.multiplicacion(), 10e-5);
+	}
 }
