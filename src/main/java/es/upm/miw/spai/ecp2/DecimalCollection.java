@@ -48,6 +48,17 @@ public class DecimalCollection {
     }
     
     public double lower(){
-    	return 0.0;    	
+    	double result;
+        if (this.size() > 0) {
+        	result = this.collection.get(0);
+            for (Double doubleIt : this.collection) {
+                if(doubleIt < result){
+                	result = doubleIt;
+                }
+            }
+        } else {
+            result = 0d;
+        }
+        return result;   	
     }
 }
