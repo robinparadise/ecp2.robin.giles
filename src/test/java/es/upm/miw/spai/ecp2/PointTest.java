@@ -47,5 +47,13 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
+    
+    @Test
+    public void testSetPoint(){
+    	pt.setX(9);
+    	pt.setY(8);
+        assertEquals(9, pt.getX());
+        assertEquals(8, pt.getY());
+    }
 
 }
