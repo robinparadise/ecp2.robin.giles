@@ -46,19 +46,24 @@ public class DecimalCollection {
         }
         return result;
     }
-    
-    public double lower(){
-    	double result;
+
+    public double lower() {
+        double result;
         if (this.size() > 0) {
-        	result = this.collection.get(0);
+            result = this.collection.get(0);
             for (Double doubleIt : this.collection) {
-                if(doubleIt < result){
-                	result = doubleIt;
+                if (doubleIt < result) {
+                    result = doubleIt;
                 }
             }
         } else {
             result = 0d;
         }
-        return result;   	
+        return result;
+    }
+
+    public double mean() {
+        // TODO Auto-generated method stub
+        return 0;
     }
 }
