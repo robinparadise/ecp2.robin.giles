@@ -63,7 +63,6 @@ public class DecimalCollection {
     }
 
     public double mean() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.sum() / this.collection.size();
     }
 }
